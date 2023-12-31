@@ -1,6 +1,6 @@
 from .nodes import IntLiteral, FloatLiteral, StringLiteral, CheckpointListLiteral, LoraListLiteral
 from .operations import Operation
-from .startup_utils import symlink_web_dir
+#from .startup_utils import symlink_web_dir
 
 NODE_CLASS_MAPPINGS = {
     "Int": IntLiteral,
@@ -18,4 +18,5 @@ NODE_DISPLAY_NAME_MAPPINGS = {
 
 EXTENSION_NAME = "ComfyLiterals"
 
-symlink_web_dir("js", EXTENSION_NAME)
+#symlink_web_dir("js", EXTENSION_NAME)
+WEB_DIRECTORY="./js"
